@@ -36,6 +36,10 @@ export default function Hero() {
                   style={{ border: "1.5px solid #000", padding: "12px 28px", fontSize: 13, fontWeight: 600, display: "inline-block" }}>
                   LinkedIn
                 </a>
+                <a href="https://github.com/NathanNghiaHo" target="_blank" rel="noopener noreferrer"
+                  style={{ border: "1.5px solid #000", padding: "12px 28px", fontSize: 13, fontWeight: 600, display: "inline-block" }}>
+                  GitHub
+                </a>
               </div>
             </div>
           </Animate>

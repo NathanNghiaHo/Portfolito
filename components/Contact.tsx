@@ -16,6 +16,7 @@ export default function Contact() {
                 { icon: "@", label: "hotrungnghia2704@gmail.com", href: "mailto:hotrungnghia2704@gmail.com" },
                 { icon: "☎", label: "036 798 2053", href: "tel:+84367982053" },
                 { icon: "in", label: "linkedin.com/in/nowfne", href: "https://www.linkedin.com/in/nowfne/" },
+                { icon: "gh", label: "github.com/NathanNghiaHo", href: "https://github.com/NathanNghiaHo" },
               ].map((item) => (
                 <a key={item.label} href={item.href} target={item.href.startsWith("http") ? "_blank" : undefined}
                   rel="noopener noreferrer"
