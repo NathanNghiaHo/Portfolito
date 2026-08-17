@@ -14,8 +14,8 @@ const projects = [
     name: "Voting System — Shareholder Meeting",
     period: "2025",
     role: "ERP Solution Developer",
-    desc: "Real-time voting platform for shareholder general meetings. Built with microservices architecture, scaled to handle high concurrent load with data integrity guarantees.",
-    tech: ["ASP.NET Core", "Microservices", "MassTransit", "SignalR", "SQL Server", "JMeter"],
+    desc: "Shareholder voting platform built from scratch — async vote processing via RabbitMQ/MassTransit, duplicate prevention with Redis bitmap (atomic, lock-free), real-time updates via SignalR. Throughput reached 2,000 req/s (~6.7x improvement) with p95 latency 272ms; zero duplicate votes, zero lost votes.",
+    tech: ["ASP.NET Core", "Redis", "RabbitMQ", "MassTransit", "SignalR", "SQL Server", "JMeter", "Microservices"],
     badge: "MICROSERVICES", badgeColor: "#1a1a1a",
   },
   {
