@@ -2,10 +2,9 @@
 import Animate from "@/components/Animate";
 
 const achievements = [
-  { icon: "🏆", title: "Valedictorian 2024", subtitle: "Aptech Computer Education", desc: "Top graduate of the entire cohort with GPA 3.8/4.0 in Software Engineering." },
-  { icon: "⭐", title: "GPA 3.8 / 4.0", subtitle: "Academic Excellence", desc: "Consistently high academic performance throughout the Software Engineering program." },
+  { icon: "🏆", title: "Valedictorian 2024", subtitle: "Aptech Computer Education", desc: "Top graduate of the entire cohort in Software Engineering.", link: "https://aptechvietnam.com.vn/hoc-vien/thu-khoa-chuyen-nganh-cong-nghe-phan-mem-2024-ho-trung-nghia-tu-dam-me-dan-loi-den-thanh-cong/" },
   { icon: "👥", title: "Team Leader", subtitle: "Multiple ERP Projects", desc: "Led development teams across 4+ enterprise ERP projects for KATA, MIFACO, MDB, and REE Corp." },
-  { icon: "⚡", title: "300+ req/s @ 2ms", subtitle: "Performance Engineering", desc: "Load tested and optimized systems to handle 300+ users/second with sub-2ms response time using JMeter." },
+  { icon: "⚡", title: "2,000 req/s", subtitle: "Performance Engineering", desc: "Redesigned voting system architecture — throughput scaled from 300 to 2,000 req/s (~6.7x) with Redis bitmap and async messaging, verified with JMeter." },
   { icon: "🚀", title: "3+ Years Experience", subtitle: "Enterprise Development", desc: "Hands-on experience building production-grade systems used by real businesses." },
 ];
 
@@ -20,7 +19,7 @@ export default function Achievement() {
         <div className="grid-5">
           {achievements.map((a, i) => (
             <Animate key={a.title} direction="up" delay={i * 80}>
-              <div style={{ border: "1px solid rgba(255,255,255,0.15)", padding: 24, height: "100%" }}>
+              <div style={{ border: "1px solid rgba(255,255,255,0.15)", padding: 24, height: "100%", cursor: a.link ? "pointer" : "default" }} onClick={a.link ? () => window.open(a.link, "_blank") : undefined}>
                 <div style={{ fontSize: 28, marginBottom: 16 }}>{a.icon}</div>
                 <h3 style={{ fontSize: 15, fontWeight: 700, marginBottom: 4 }}>{a.title}</h3>
                 <p style={{ fontSize: 10, color: "#888", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 12 }}>{a.subtitle}</p>

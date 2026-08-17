@@ -14,7 +14,7 @@ const experiences = [
       "Designed multi-format Audit Log system",
       "Unit of Work + Repository pattern architecture",
       "SQL optimization & HealthCheck integration",
-      "Load & performance testing with JMeter (300+ req/s, ~2ms response)",
+      "Performance testing with JMeter — scaled voting system from 300 to 2,000 req/s (~6.7x) using Redis bitmap and async messaging",
     ],
     tech: ["C#", "ASP.NET Core", "MassTransit", "Azure DevOps", "Microservices", "SQL Server", "JMeter"],
     current: true,

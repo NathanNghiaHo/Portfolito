@@ -15,7 +15,7 @@ export default function Hero() {
                 fontSize: 11, fontWeight: 700, letterSpacing: "0.1em",
                 textTransform: "uppercase", marginBottom: 24,
               }}>
-                🏆 Valedictorian 2024 — GPA 3.8/4.0
+                🏆 Valedictorian 2024
               </div>
               <h1 className="hero-title" style={{ fontSize: 60, fontWeight: 800, lineHeight: 1.1, letterSpacing: "-2px", marginBottom: 16 }}>
                 Ho Trung<br />
